@@ -7,4 +7,7 @@
     <dimen name="largura_86">86dp</dimen>
     <dimen name="altura_86">86dp</dimen>
     <dimen name="tamanho_fonte_18">18sp</dimen>
+    <dimen name="largura_50">50dp</dimen>
+    <dimen name="altura_50">50dp</dimen>
+    <dimen name="tamanho_fonte_14">14sp</dimen>
 </resources>
