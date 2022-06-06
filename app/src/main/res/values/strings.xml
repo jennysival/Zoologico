@@ -2,4 +2,8 @@
     <string name="app_name">Zoologico</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_descritivo_cadastro">Adicione aqui o nome do animal que você quer adicionar no app e sua descrição. Use a criatividade!</string>
+    <string name="hint_animal">Animal</string>
+    <string name="hint_descricao">Descrição</string>
+    <string name="texto_botao_adicionar">Adicionar</string>
 </resources>
