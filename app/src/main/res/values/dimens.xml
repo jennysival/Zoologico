@@ -4,4 +4,7 @@
     <dimen name="tamanho_fonte_12">12sp</dimen>
     <dimen name="largura_0">0dp</dimen>
     <dimen name="altura_0">0dp</dimen>
+    <dimen name="largura_86">86dp</dimen>
+    <dimen name="altura_86">86dp</dimen>
+    <dimen name="tamanho_fonte_18">18sp</dimen>
 </resources>

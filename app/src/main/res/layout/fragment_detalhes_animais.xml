@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragments.DetalhesAnimaisFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/iv_icone_animal"
+        android:layout_width="@dimen/largura_86"
+        android:layout_height="@dimen/altura_86"
+        android:layout_margin="@dimen/margem_16"
+        android:src="@drawable/animal"
+        android:contentDescription="@string/descricao_imagem_animal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_descricao"/>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tv_nome_animal"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_nome_do_animal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_18"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_icone_animal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_descricao"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tv_descricao"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_descricao_animal"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/iv_icone_animal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_voltar"/>
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/laranja"
+        android:text="@string/texto_botao_voltar"
+        android:textAllCaps="true"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_descricao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf=""/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

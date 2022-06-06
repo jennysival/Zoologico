@@ -6,4 +6,8 @@
     <string name="hint_animal">Animal</string>
     <string name="hint_descricao">Descrição</string>
     <string name="texto_botao_adicionar">Adicionar</string>
+    <string name="texto_botao_voltar">Voltar</string>
+    <string name="texto_descricao_animal">Este é o animal mais lindo e veloz do mundo, pode confiar. Todos no universo amam este ser vivo magnifico</string>
+    <string name="descricao_imagem_animal">Desenho de coração azul claro com patinha de animal branca com almofadinhas rosa na frente</string>
+    <string name="texto_nome_do_animal">Nome do Animal</string>
 </resources>
