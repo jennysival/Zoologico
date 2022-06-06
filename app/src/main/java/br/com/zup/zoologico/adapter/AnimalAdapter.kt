@@ -2,9 +2,7 @@ package br.com.zup.zoologico.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.RecyclerView
-import br.com.zup.zoologico.CHAVE_LISTA
 import br.com.zup.zoologico.databinding.AnimalItemBinding
 import br.com.zup.zoologico.model.Animal
 
