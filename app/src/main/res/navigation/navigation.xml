@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation">
+    android:id="@+id/navigation"
+    app:startDestination="@id/cadastroAnimaisFragment">
 
+    <fragment
+        android:id="@+id/cadastroAnimaisFragment"
+        android:name="br.com.zup.zoologico.fragments.CadastroAnimaisFragment"
+        android:label="CadastroAnimaisFragment" >
+        <action
+            android:id="@+id/action_cadastroAnimaisFragment_to_detalhesAnimaisFragment"
+            app:destination="@id/detalhesAnimaisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalhesAnimaisFragment"
+        android:name="br.com.zup.zoologico.fragments.DetalhesAnimaisFragment"
+        android:label="DetalhesAnimaisFragment" >
+        <action
+            android:id="@+id/action_detalhesAnimaisFragment_to_cadastroAnimaisFragment"
+            app:destination="@id/cadastroAnimaisFragment" />
+    </fragment>
 </navigation>
